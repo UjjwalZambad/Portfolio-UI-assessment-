@@ -1,0 +1,68 @@
+
+body {
+ font-family: Arial, sans-serif;
+}
+
+.sec{
+    width: full;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: #0d6efd;
+    color: white
+}
+
+.img_class{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.sub{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    row-gap: 20px;
+}
+
+.skill{
+    background-color: black;
+    color: white;
+}
+.nav-link:hover {
+ color: #0d6efd;
+ text-decoration: underline;
+}
+
+.fade-in {
+ animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn {
+ from { opacity: 0; }
+ to { opacity: 1; }
+}
+
+.card {
+ transition: transform 0.3s;
+}
+.card:hover {
+ transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+ #heroCarousel img {
+   height: 250px;
+   object-fit: cover;
+ }
+}
+
+@media (max-width: 568px) {
+ #heroCarousel img {
+   height: 200px;
+   object-fit: cover;
+ }
+}
